@@ -37,13 +37,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+1 (555) 123-4567',
+      content: '+91 123-456-7890',
       description: 'Mon-Fri 9AM-6PM EST',
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: 'San Francisco, CA',
+      content: 'Kurnool, Andhra Pradesh, India',
       description: 'Remote-first company',
     },
   ];
