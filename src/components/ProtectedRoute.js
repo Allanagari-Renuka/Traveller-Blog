@@ -1,23 +1,21 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
-
-const ProtectedRoute = ({ children }) => {
-  const { user, loading } = useAuth();
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary-600"></div>
-      </div>
-    );
-  }
-
-  if (!user) {
-    return <Navigate to="/login" replace />;
-  }
-
-  return <>{children}</>;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-
-export default ProtectedRoute;
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(require("react"));
+const react_router_dom_1 = require("react-router-dom");
+const AuthContext_1 = require("../contexts/AuthContext");
+const ProtectedRoute = ({ children }) => {
+    const { user, loading } = (0, AuthContext_1.useAuth)();
+    if (loading) {
+        return (<div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary-600"></div>
+      </div>);
+    }
+    if (!user) {
+        return <react_router_dom_1.Navigate to="/login" replace/>;
+    }
+    return <>{children}</>;
+};
+exports.default = ProtectedRoute;

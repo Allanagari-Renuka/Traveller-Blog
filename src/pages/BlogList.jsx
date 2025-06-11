@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Search, Filter, BookOpen } from 'lucide-react';
-import BlogCard from '../components/BlogCard';
-import Pagination from '../components/Pagination';
+import BlogCard from '../components/BlogCard.jsx';
+import Pagination from '../components/Pagination.jsx';
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);

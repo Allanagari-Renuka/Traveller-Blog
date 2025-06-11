@@ -3,8 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-import { supabase } from '../lib/supabase';
-import { useAuth } from '../contexts/AuthContext';
+import { supabase } from '../lib/supabase.jsx';
+import { useAuth } from '../contexts/AuthContext.jsx';
 import toast from 'react-hot-toast';
 
 const EditPost = () => {

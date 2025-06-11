@@ -1,20 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { AuthProvider } from './contexts/AuthContext';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Destinations from './pages/Destinations';
-import Experiences from './pages/Experiences';
-import BlogList from './pages/BlogList';
-import BlogDetail from './pages/BlogDetail';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
-import CreatePost from './pages/CreatePost';
-import EditPost from './pages/EditPost';
+import { AuthProvider } from './contexts/AuthContext.jsx';
+import Layout from './components/Layout.jsx';
+import Home from './pages/Home.jsx';
+import Destinations from './pages/Destinations.jsx';
+import Experiences from './pages/Experiences.jsx';
+import BlogList from './pages/BlogList.jsx';
+import BlogDetail from './pages/BlogDetail.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import CreatePost from './pages/CreatePost.jsx';
+import EditPost from './pages/EditPost.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 
 function App() {

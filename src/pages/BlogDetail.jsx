@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Calendar, User, MapPin, Edit, Trash2, ArrowLeft } from 'lucide-react';
 import { format } from 'date-fns';
-import { supabase } from '../lib/supabase';
-import { useAuth } from '../contexts/AuthContext';
+import { supabase } from '../lib/supabase.jsx';
+import { useAuth } from '../contexts/AuthContext.jsx';
 import toast from 'react-hot-toast';
 
 const BlogDetail = () => {
