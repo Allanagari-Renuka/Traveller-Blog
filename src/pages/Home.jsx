@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Globe, Users, PenTool } from 'lucide-react';
-import { supabase } from '../lib/supabase.jsx';
+import { supabase } from '../lib/supabase.js';
 import BlogCard from '../components/BlogCard.jsx';
 
 const Home = () => {

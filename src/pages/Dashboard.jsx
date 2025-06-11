@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { PenTool, Eye, Edit, Plus, Calendar, Trash2 } from 'lucide-react';
 import { format } from 'date-fns';
-import { supabase } from '../lib/supabase.jsx';
+import { supabase } from '../lib/supabase.js';
 import { useAuth } from '../contexts/AuthContext.jsx';
 import toast from 'react-hot-toast';
 
