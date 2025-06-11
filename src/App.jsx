@@ -16,6 +16,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import CreatePost from './pages/CreatePost.jsx';
 import EditPost from './pages/EditPost.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
+import UserDropdown from './pages/UserDropdown.jsx';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
                 path="/dashboard" 
                 element={
                   <ProtectedRoute>
+                    <UserDropdown />
                     <Dashboard />
                   </ProtectedRoute>
                 } 

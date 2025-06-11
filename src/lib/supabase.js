@@ -1,22 +1,32 @@
-// "use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
-// exports.supabase = void 0;
-// const supabase_js_1 = require("@supabase/supabase-js");
+
+// import { createClient } from '@supabase/supabase-js';
 // const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 // const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
 // if (!supabaseUrl || !supabaseAnonKey) {
-//     throw new Error('Missing Supabase environment variables');
+//   throw new Error('Missing Supabase environment variables');
 // }
-// exports.supabase = (0, supabase_js_1.createClient)(supabaseUrl, supabaseAnonKey);
+
+// export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Missing Supabase environment variables');
+if (!supabaseUrl) {
+  console.error('Missing VITE_SUPABASE_URL environment variable');
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+if (!supabaseKey) {
+  console.error('Missing VITE_SUPABASE_ANON_KEY environment variable');
+}
+
+export const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: true
+  }
+});
