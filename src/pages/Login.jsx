@@ -626,7 +626,6 @@ const Login = () => {
           </div>
         </div>
       )} */}
-      // ...existing code...
 {user && (
   <div className="fixed top-4 right-4 z-50">
     <div className="relative inline-block text-left user-dropdown">
