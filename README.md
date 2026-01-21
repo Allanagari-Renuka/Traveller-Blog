@@ -224,13 +224,8 @@ Contributions are welcome! Here's how you can help:
 - Run `npm run lint` before committing
 - Write meaningful commit messages
 - Add comments for complex logic
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+  
 ## 👥 Authors
-
 - **Renuka Allanagari** - [@Allanagari-Renuka](https://github.com/Allanagari-Renuka)
 
 ## 🙏 Acknowledgments
@@ -241,15 +236,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## 📞 Support
-
 If you encounter any issues or have questions:
-
 - Open an [issue](https://github.com/Allanagari-Renuka/Traveller-Blog/issues)
 - Check existing issues for solutions
 - Contact the maintainers
 
 ## 🗺️ Roadmap
-
 - [ ] User authentication and authorization
 - [ ] Comment system for blog posts
 - [ ] Social media integration
@@ -258,7 +250,5 @@ If you encounter any issues or have questions:
 - [ ] Multi-language support
 - [ ] Dark mode
 - [ ] Progressive Web App (PWA) features
-
----
 
 ⭐ Star this repository if you find it helpful!
